@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/*GLOBAL*/
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    margin:none;
+}
+/*DISPLAY*/
+.showcase{
+    margin: auto;
+    text-align: center;
+    width:100%;
+    height:100vh;
+    background-image: url('../images/signin_page4.jpg');
+    overflow: hidden;
+    line-height: 1.5;
+}
+
+.showcase h2{
+    margin:4.5% 36% 20px 36%;
+    font-size: 700;
+    color: white;
+    background-color: #000000;
+    opacity:0.7;
+    border: 1px white solid;
+    border-radius: 3px;
+}
+
+.sign-in{
+    margin:6% 30% 20px 30%;
+    background-color: black;
+    border-radius: 5px;
+    opacity:0.7;
+    padding:20px;
+}
+
+.sign-in h1{
+    color: white;
+    font-size: 50px;
+}
+
+/*FORM*/
+.sign-in form{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    text-align: center;
+    align-items: left;
+    padding: 5px 0 5px 0;
+}
+
+.sign-in label{
+    color: white;
+}
+.email{
+    text-align: left;
+    margin-left:auto;
+    margin-right:auto;
+    text-transform: uppercase;
+}
+.password{
+    text-transform: uppercase;
+    text-align: left;
+    margin-left:auto;
+    margin-right:auto;
+}
+.email label{
+    text-align: left;
+}
+
+.password label{
+   text-align: left;
+}
+
+form input{
+    line-height: 1.5;
+    width:120%;
+}
+/*BUTTON PROPERTIES*/
+.btn{
+    margin-top:20px;
+    margin-bottom: 5px;
+    padding: 3px;
+    background-color: black;
+    border:1px white solid;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+}
+
+
+.btn:hover{
+    transform: scale(0.97);
+}
+
+.showcase h3,h4{
+    color: white;
+}
+
+/*SIGN-UP REDIRECT*/
+.sign-up{
+    margin-top:7px;
+    padding: 3px;
+    background-color: black;
+    border:1px white solid;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.sign-up a{
+    color:white;
+}
+.sign-up:hover{
+    transform: scale(0.97);
+}
+
+/*MEDIA QUERIES*/
+
+/*MAX WIDTH TO 1200px*/
+@media(max-width:1200px){
+    .email, .password{
+        margin-left:15px;
+        margin-right: 15px;
+    }
+    form input{
+        width:100%;
+    }
+}
+/*TABLET SCREEN*/
+@media(max-width:832px){
+    .showcase h2{
+        margin:4.5% 25% 20px 25%;
+    }
+    .email, .password{
+        margin-left:8px;
+        margin-right: 8px;
+    }
+    form input{
+        width:100%;
+    }
+    
+}
+/*MINI TABLET SCREENS AND PHONE VIEWS*/
+@media(max-width:700px){
+    .showcase h2{
+        margin:4.5% 17% 20px 19%;
+        font-size: 20px;
+    }
+    .sign-in{
+        margin:12.5% 20% 20px 20%;
+    }
+    .sign-in h1{
+        font-size: 30px;
+    }
+}
+
+@media(min-height:1150px){
+    h2, .sign-in{
+        margin-top:15%;
+        transform: scale(1.75);
+    }
+
+    .showcase h2{
+        margin:10% 36% 30% 36%;
+    }
+}
+
+@media(height:1024px){ 
+    @media(width:768px){
+        h2, .sign-in{
+            margin-top:15%;
+            transform: scale(1.3);
+        }
+    
+        .showcase h2{
+            margin:10% 33% 30% 33%;
+        } 
+    }
+}
+
+@media(height:812px){ 
+    @media(width:375px){
+        .showcase h2{
+            margin:10% 22% 30% 22%;
+        }
+    }
+}
+
+@media(height:568px){ 
+    @media(width:320px){
+        .showcase h2{
+            margin:6% 18% 3% 18%;
+        }
+
+        .sign-in{
+            transform:scale(0.9);
+            margin:6% 10% 20px 10%;
+        }
+    }
+}
+
+
+@media(height:823px){ 
+    @media(width:411px){
+        .showcase h2{
+            margin:15% 18% 8% 18%;
+        }
+
+        .sign-in{
+            margin:15% 10% 20px 10%;
+        }
+    }
+}
+
+@media(height:731px){ 
+    @media(width:411px){
+        .sign-in{
+            margin:15% 10% 20px 10%;
+        }
+    }
+}

@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+@font-face{
+    font-family: 'Custom-font-1';
+    src: url('../necromax/azonix/Azonix.otf')format('opentype');
+
+    font-family: 'Custom-font-2';
+    src: url('../necromax/Headache-Font-OTF/Headache.otf')format('opentype');
+}
+
+*{
+    text-align: center;
+    max-width: 99.9%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+body{
+    background-image: url('../necromax/images/back4.jpg');
+}
+
+.Nav{
+    min-height: 100px;
+    text-align: center;
+    margin: 10px 0px;
+    font-family: 'Custom-font-2';
+}
+
+.topic{
+    text-align: center;
+}
+.navigate{
+    border: 1px #c5c6c7 solid;
+    border-radius: 5px;
+    background-color: rgb(32,32,32);
+    opacity: 0.8;
+    line-height: 3rem;
+}
+.navigate ul{
+    list-style: none;
+}
+
+.navigate li{
+    border-radius: 5px;
+    display: inline;
+    text-decoration: none;
+    padding: 10px 1%;
+}
+
+.navigate a{
+    padding: 7px;
+    color: #c5c6c7;
+    text-decoration: none;
+}
+
+.hindi{
+    font-family: 'Quicksand';
+    margin:15px;
+    float: left;
+}
+
+.hindi h2{
+    text-align: center;
+    color: #c5c6c7;
+    opacity:0.8;
+    padding:10px;
+    border: 1px #c5c6c7 solid;
+}
+
+.kabir-singh{
+    padding:10px;
+    color: #c5c6c7;
+}
+.love-aaj-kal{
+    padding:10px;
+    color:#c5c6c7;
+}
+.yjhd{
+    padding:10px;
+    color: #c5c6c7;
+}
+
+.english{
+    font-family: 'Quicksand';
+    margin:15px;
+    float: left;
+}
+
+.english h2{
+    text-align: center;
+    color: #c5c6c7;
+    opacity:0.8;
+    padding:10px;
+    border: 1px #c5c6c7 solid;
+}
+
+.memories-do-not-open{
+    padding:10px;
+    color: #c5c6c7;
+}
+.divide{
+    padding: 10px;
+    color: #c5c6c7;
+}
+
+.take-me-home{
+    padding: 10px;
+    color: #c5c6c7;
+}
+
+.trends{
+    font-family: 'Quicksand';
+    margin:15px;
+    float: left;
+}
+
+.trends h2{
+    text-align: center;
+    color: #c5c6c7;
+    opacity:0.8;
+    padding:10px;
+    border: 1px #c5c6c7 solid;
+}
+.trends h3{
+    text-align: center;
+    color: #c5c6c7;
+    opacity:0.8;
+    padding:10px;
+    background-color: rgb(32,32,32);
+    border-radius: 5px;
+   /* border: 1px #c5c6c7 solid; */
+}
+
+.trend1{
+    margin:10px;
+    background-color: rgb(32,32,32);
+    padding: 10px;
+    color: #c5c6c7;
+    opacity: 0.8;
+    border-radius: 8px;
+}
+.trend1 h3{
+    color: #c5c6c7;
+}
+.trend2{
+    margin:10px;
+    background-color: rgb(32,32,32);
+    padding: 10px;
+    color: #c5c6c7;
+    opacity: 0.8;
+    border-radius: 8px;
+}
+.trend2 h3{
+    color: #c5c6c7;
+}
+.trend3{
+    margin:10px;
+    background-color: rgb(32,32,32);
+    padding: 10px;
+    color: #c5c6c7;
+    opacity: 0.8;
+    border-radius: 8px;
+}
+.trend3 h3{
+    color: #c5c6c7;
+}
+.trend4{
+    margin:10px;
+    background-color: rgb(32,32,32);
+    padding: 10px;
+    color: #c5c6c7;
+    opacity: 0.8;
+    border-radius: 8px;
+}
+.trend4 h3{
+    color: #c5c6c7;
+}
+.trend5{
+    margin:10px;
+    background-color: rgb(32,32,32);
+    padding: 10px;
+    color: #c5c6c7;
+    opacity: 0.8;
+    border-radius: 8px;
+}
+.trend5 h3{
+    color: #c5c6c7;
+}
+
+
+
+.vids{
+    min-width: 25%;
+    text-align: center;
+    font-family: 'Quicksand';
+    margin:15px;
+    float: left;
+}
+
+.vids h2{
+    text-align: center;
+    color: #c5c6c7;
+    opacity:0.8;
+    padding:10px 50px;
+    border: 1px #c5c6c7 solid;
+}
+.vid1{
+    margin:10px;
+}
+.vid2{
+    margin:10px;
+}
+.vid3{
+    margin:10px;
+}
+.vid4{
+    margin:10px;
+}
+.media{
+    float: right;
+    min-width: 100%;
+    background-color: rgb(32,32,32);
+    border:1px rgb(32,32,32) solid;
+    border-radius: 5px;
+    opacity:0.8;
+}
+.social{
+    color: #c5c5c5;
+    font-family: 'Quicksand';
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  
+  .fa:hover {
+    opacity: 0.7;
+    transform: scale(0.96);
+  }
+  
+
+  
+  /* Instagram */
+  .fa-instagram {
+    background: #d6249f;
+    color: white;
+  }
+  
+  /* Github */
+  .fa-github {
+    background: black;
+    color: white;
+  }
+
+  @media(max-width:768px){
+
+    .elements{
+        display: inline;
+        margin: none;
+        padding:none;
+    }
+  }

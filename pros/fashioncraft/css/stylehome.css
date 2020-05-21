@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+/* GLOBAL */
+.container{
+    width:80%;
+    margin:auto;
+    overflow: hidden;
+}
+/*HEADER*/
+header{
+    padding-top: 15px;
+    background-color: black;
+    min-height: 60px;
+    opacity: 0.9;
+}
+
+header ul{  
+    padding:0;
+    margin:0;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header li{
+    display: inline;
+    float: left;
+    padding: 0 20px 0 20px;
+}
+
+header #brand{
+    float:left;
+    color: white;
+}
+
+header #brand h1{
+    margin:0;
+}
+/*SETTING UP THE NAVIGATION BAR*/
+header nav{
+    float:right;
+    margin-top:12px;
+}
+
+/*BUTTON LOOK OF SIGN-IN*/
+.sign-in{
+    border: 1px white solid;
+    border-radius: 3px;
+    padding:5px;
+}
+
+/*MAIN BACKGROUND DISPLAY PICTURE DIMENSIONS*/
+.showcase{
+    width:100%;
+    height:90vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/home_page.jpg');
+    top:50%;
+    left:50%;
+   /* transform:translate(50%,50%); */
+}
+/*
+.background img{
+    width:100%;
+    height:94vh;
+    z-index: 1;
+}
+*/
+
+/*NEWS ALERT*/
+.corona{
+    color: white;
+    background-color: #222;
+    margin:10px 34% 10px 34%;
+    padding:2px 4px 2px 4px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px white solid;
+    opacity:0.7;
+    text-transform: uppercase;
+}
+
+.moto{
+    width:75%;
+    margin:auto;
+    padding:0;
+}
+/*LEFT-SIDE TEXT*/
+.moto h2{
+    font-size: 75px;
+    text-align: left;
+    color: white;
+    font-weight: 700;
+}
+/*CENTRE TEXT*/
+.moto h3{
+    font-size: 75px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+/*RIGHT-SIDE TEXT*/
+.moto h4{
+    font-size: 75px;
+    text-align: right;
+    color: white;
+    font-weight: 700;
+}
+
+footer{
+    margin:0;
+    padding:0;
+    background-color: black;
+    opacity: 0.9;
+}
+
+/*ABOUT, HELP, SUGGESSTION, POLICIES...*/
+.foot{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.foot ul{
+    padding:0;
+    margin:0;
+}
+
+.foot a{
+    color: white; 
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.foot li{
+    display: inline;
+    padding:0 30px 0 30px;
+}
+/*FASHIONCRAFT COPYRIGHT*/
+.copyright{
+    color: white;
+    text-align: center;
+}   
+
+/*MEDIA QUERIES*/
+
+/*BETWEEN LAPTOP VIEW TO TABLET VIEW*/
+@media(max-width:1400px){
+
+    .corona{
+        margin:50px 31% 10px 31%;
+    }
+    .moto{
+        margin-top:100px;
+    }
+
+    .moto h2, .moto h3, .moto h4{
+        font-size: 50px;
+    }
+}
+
+/*BETWEEN TABLET VIEW TO PHONE VIEW*/
+@media(max-width:768px){
+    header{
+        padding-bottom: 15px;
+    }
+
+    header #brand, header nav, header nav li{
+        text-align: center;
+        float:none;
+        width:100%;
+    }  
+    header .sign-in{
+        border: none;
+        border-radius: none;
+    }
+
+    .corona{
+        margin:20px 30% 10px 30%;
+    }
+
+    .moto{
+        margin-top: 15%;
+    }
+    .moto h2, .moto h3, .moto h4{
+        font-size: 50px;
+    }
+
+/*LARGER PHONE VIEW TO SMALLER PHONE VIEWS*/
+@media(max-width:541px){
+    header #brand, header nav, header nav li{
+        text-align: center;
+        float:none;
+        width:100%;
+    } 
+ 
+    header .sign-in{
+        display: inline-block;
+    }
+
+    .corona{
+        margin:15% 25% 10px 25%;
+        }
+    .moto{
+        padding-top: 6%;
+    }
+    .moto h2, .moto h3, .moto h4{
+        font-size: 40px;
+    }
+
+/*sMALLER PHONE VIEW*/    
+@media(max-width:350px){
+    header #brand, header nav, header nav li{
+        text-align: center;
+        float:none;
+        width:100%;
+    } 
+    header{
+        min-height: 55px;
+    }
+        
+    header .sign-in{
+        display: inline-block;
+    }
+
+    .corona{
+        margin:12% 25% 10px 25%;
+    }
+    .moto{
+        padding-top: 4%;
+    }
+    .moto h2, .moto h3, .moto h4{
+        font-size: 30px;
+    }
+}

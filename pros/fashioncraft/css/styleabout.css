@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+}
+
+header{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.wrapper{
+    margin:auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.shubh img{
+    border-radius: 75px;
+}
+
+.social-shubh{
+    color: #c5c5c5;
+    font-family: 'Quicksand';
+}
+
+.tanay img{
+    border-radius: 75px;
+}
+
+.social-tanay{
+    color: #c5c5c5;
+    font-family: 'Quicksand';
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  
+  .fa:hover {
+    opacity: 0.7;
+    transform: scale(0.96);
+  }
+  
+
+  
+  /* Instagram */
+  .fa-instagram {
+    background: #d6249f;
+    color: white;
+  }
+  
+  /* Github */
+  .fa-github {
+    background: black;
+    color: white;
+  }
+
+  .fa-linkedin{
+      background-color: #0e76a8;
+      color: white;
+  }
+
+  footer{
+      text-align: center;
+      margin-top:70px;
+  }
+
+@media(max-width:768px){
+    .wrapper{
+        grid-template-columns: 1fr;
+        grid-gap:10px;
+    }
+
+    footer{
+        margin-top: 30px;
+    }
+}  

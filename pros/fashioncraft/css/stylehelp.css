@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.wrapper{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 15px;
+}
+
+.amazon img, .flipkart img , .snapdeal img, .shein img, .van-heusen img, .zara img{
+    border: 3px rgba(0,0,0,0.9) solid;
+    border-radius: 5px;
+}
+
+footer{
+    text-align: center;
+}
+
+@media(max-width:1023px){
+    .wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:767px){
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+}
