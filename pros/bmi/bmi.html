@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator | Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5 text-info">BMI Calculator</h1>
+        <form action="" class="form-group" id="bmiForm">
+            <input type="number" name="" id="heightInput" class="form-control form-control-lg mt-3 mb-3" placeholder="Enter height (in cms)..." required>
+
+            <input type="number" name="" id="weightInput" class="form-control form-control-lg mt-3 mb-3" placeholder="Enter weight (in kgs)..." required>
+
+            <button type="submit" class="btn btn-lg bg-info text-white" id="btn">Submit</button>
+
+        </form>
+
+        <div id="output">
+                <div class="form-control form-control-lg" id='cardBlock'>
+                    <h3 class='text-white'>BMI</h3>
+                    <div id="outputBMI" class='text-white'></div>
+                    <div id="notice" class="text-white"></div>
+                </div>
+        </div>
+    </div>
+
+    <script src="javabmi.js"></script>
+    <footer class='text-center mt-5 pt-3'>
+        <p>BMI Calculator project using HTML/CSS/BOOTSTRAP/JAVASCRIPT by SHUBH NISAR, Computer Engineering student at Dwarkadas J. Sanghvi College of Engineering</p>
+    </footer>
+</body>
+</html>
