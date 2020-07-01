@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+/*.container{
+    width:100%;
+}*/
+
+#home-btn{
+    bottom:25px;
+    right:15px;
+    position: fixed;
+    z-index: 5;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    text-transform: uppercase;
+    color: white;
+    background-color: #333;
+    text-align: center;
+    letter-spacing: 4.5px;
+    min-height: 80px;
+}
+
+#covid{
+    /*color: #E50914;*/
+}
+#covid-card{
+    width:95%;
+    margin:0 auto 0 auto;
+}
+
+#about{
+    border-left: 3px #fb8c00 solid;
+    padding-left: 8px;
+}
+
+#symp{
+    border-left: 3px #8d6e63 solid;
+    padding-left: 8px;
+}
+
+.init-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    
+}
+#sec-cards{
+    width:300px;
+    height:300px;
+    text-align: center;
+    margin: auto;
+}
+
+@media(max-width:1400px){
+    .init-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:840px){
+    .init-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .no-display-in-small-screen{
+        display: none;
+    }
+}
+@media(max-width:700px){
+    .init-grid{
+        grid-template-columns: 1fr;
+    }
+    .no-display-in-small-screen{
+        display: none;
+    }
+}
+
+@media(max-width:541px){
+    
+    .init-grid{
+        grid-template-columns: 1fr;
+    }
+    .no-display-in-small-screen, .small-screen{
+        display: none;
+    }
+    h1{
+        font-size:40px;
+    }
+    h3{
+        font-size:28px;
+    }
+}
+
+@media(max-width:320px){
+    
+    .init-grid{
+        grid-template-columns: 1fr;
+    }
+    .no-display-in-small-screen, .small-screen{
+        display: none;
+    }
+    h1{
+        font-size:30px;
+    }
+    h3{
+        font-size:18px;
+    }
+}

@@ -1,0 +1,53 @@
+.slider {
+    height: 600px !important;
+}
+
+.slides {
+    height: 600px !important;
+}
+
+body{
+    background-color: #e0e0e0;
+    color: #f5f5f5;
+}
+.main .nav-wrapper .brand-logo{
+    margin-left: 35px;
+}
+.corona .nav-wrapper .title{
+    margin-left: 25px;
+}
+.corona .nav-wrapper ul li{
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .reviews .container .collapsible .parts .stars{
+        visibility: hidden;
+    }
+    .info .container{
+        justify-content: center;
+        text-align: center;
+    }
+    .photos .slider{
+        height: 450px !important;
+        width: 100% !important;
+    }
+    .photos .slider .slides{
+        height: 450px !important;
+        width: 100% !important;
+    }
+    .photos .slider .slides .caption{
+        visibility: hidden;
+    }
+    .corona .nav-wrapper .title{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+    .corona .nav-wrapper ul li{
+        visibility: hidden;
+    }
+  }

@@ -1,0 +1,110 @@
+.container{
+    width:90% !important;
+}
+body{
+    background-color: #333;
+}
+.slider{
+    height:650px !important;
+}
+.slides{
+    height:600px !important;
+}
+#ivex-mumbai{
+    margin:0;
+    padding-top:5px;
+}
+#style-about{
+    text-transform: uppercase;
+    border-left: 5px #f44336 solid;
+    padding-left:10px;
+}
+
+#about-image img{
+    height: 200px !important;
+}
+
+#style-service{
+    margin: none;
+    text-transform: uppercase;
+    border-left: 5px #f44336 solid;
+    padding-left:10px;
+}
+
+.tabs .tab a.active {
+    background-color: #ffe5e5;
+    color:#f44336;
+} /*Background and text color when a tab is active*/
+
+.tabs .indicator {
+    background-color:#f44336;
+
+} /*Color of underline*/
+
+.loc-data{
+    background-color: #444;
+    color: white;
+    
+}
+.room-data{
+    margin-top:20px;
+    background-color: #444;
+    color: white;
+    text-align: center;
+    border:1px white solid;
+    border-radius: 5px;
+}
+
+.dining-data{
+    margin-top:20px;
+    background-color: white;
+    color: black;
+}
+#amenities-data{
+    margin-top:40px;
+    margin-bottom: 0;
+}
+.carousel{
+    height:600px !important;
+}
+.carousel .carousel-item {
+    width:500px !important;}
+#stay{
+    text-transform: uppercase;
+    border-left: 5px #f44336 solid;
+    padding-left:10px;
+}
+
+@media(max-width:821px){
+    #about-image img{
+        height: 300px !important;
+    }
+}
+@media(max-width:693px){
+    #about-image img{
+        height: 400px !important;
+        width: 250px !important;
+    }
+}
+
+@media(max-width:478px){
+    #tel-btn{
+        margin-top: 5px;
+    }
+    .carousel .carousel-item {
+        width:300px !important;}
+}
+
+@media(max-width:427px){
+    .tabs .tab a{
+        font-size: 14px !important;
+        padding: 0 6px !important;
+    }
+}
+
+@media(max-width:373px){
+    .tabs .tab a{
+        font-size: 12px !important;
+        padding: 0 1px !important;
+    }
+}
