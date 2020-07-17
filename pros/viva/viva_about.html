@@ -7,16 +7,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <style>
         .container{
-          /*width: 90% !important;*/
+          width: 95% !important;
+          border: 2px #333 solid;
+          border-radius: 25px;
+          overflow: hidden;
         }
         #main{
-            margin:15px auto 15px auto;
+            margin:35px auto 35px auto !important;
         }
         #image-viva-card{
             width: 100% !important;
         }
         #image-viva-card img{
-            height: 500px !important;
+            height: 700px !important;
         }
         #content-container{
             margin-bottom: 90px;
@@ -28,7 +31,10 @@
         #viva-title h3{
             margin: none !important;
             padding-top: 0;
-            padding-left: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+            font-size: 85px;
+            font-weight: bold;
         }
         #viva-description{
             text-align: center;
@@ -37,6 +43,7 @@
             border: 2px #333 solid;
             border-radius: 10px;
             padding: 10px;
+            font-size: 40px;
         }
         .profile-container{
             text-align: center;
@@ -63,11 +70,11 @@
             margin-right: 16px;
         }
         #qr-text{
-          margin: 10px 0 10px 0;
+          margin: 25px 0 10px 0;
           border: 2px #333 solid;
           border-radius: 10px;
           padding: 10px;
-          width: 300px;
+          width: 400px;
         }
         .profile-description{
             text-align: right;
@@ -76,13 +83,13 @@
             text-transform: uppercase;
             color: black;
             text-align: center;
-            margin: 10px 0 10px 0;
+            margin: 25px 0 10px 0;
             letter-spacing: 4px;
             font-weight: bold;
             border: 2px #333 solid;
             border-radius: 10px;
             padding: 10px;
-            width: 300px;
+            width: 400px;
             float: right;
         }
         #flexer{
@@ -91,6 +98,9 @@
             justify-content: space-between;
             margin-left: 15px !important;
             margin-right: 15px !important;
+        }
+        #flexer i{
+          font-size: 150px !important;
         }
     </style>
 </head>
@@ -103,7 +113,7 @@
         <div id="content-container">
         <div class="">
             <span class="" id="viva-title">
-                <h3>VIVA GRANT ROAD</h3>
+                <h3><hr>VIVA GRANT ROAD<hr></h3>
             </span>
             
             <div class="">
@@ -117,11 +127,11 @@
         <div class="profile-container">
             <div id='push-down'>
                 <div class="left">
-                  <img src="qrcode.png" alt="QR" id="qr" width="300px" class="responsive-img">
+                  <img src="qrcode.png" alt="QR" id="qr" width="400px" class="responsive-img">
                   <h5 class='' id='qr-text'>SCAN QR</h5>
                 </div>
                 <div id='vipul-position'>
-                  <img src="vipul.JPG" alt="" class="circle responsive-img" width="300px" id="vipul">
+                  <img src="vipul.JPG" alt="" class="circle responsive-img" width="400px" id="vipul">
                   <div class="profile-description">
                       <h5>Vipul Nisar</h5>
                   </div>
