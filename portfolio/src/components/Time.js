@@ -31,12 +31,33 @@ const borders = keyframes`
 `;
 
 const StyledTime = styled.p`
-    margin: 0;
+    margin: ${props => props.size != 0 ? '6px' : '0'};
     padding: 0;
-    font-size: ${props => props.size == 0 ? '10vw' : '0.5vw'};
+    font-size: ${props => props.size == 0 ? '10vw' : '24px'};
     color: ${theme.color};
+    font-weight: ${props => props.size != 0 && 600};
 
-    animation: ${borders} ease 2s;
+    animation: ${borders} ease;
+    animation-duration: ${props => props.size == 0 && '2s'};
     transition: 1s ease;
-    border-bottom: 1px #444 solid;
+    border-bottom: ${props => props.size == 0 && '1px #444 solid'};
+
+    @media(max-width: 1050px){
+        position: ${props => props.size != 0 && 'absolute'};
+        left: 25vw;
+    }
+
+    @media(max-width: 769px){
+        position: absolute;
+        top: 43px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    @media(max-width: 445px){
+        position: absolute;
+        top: 90px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 `;
