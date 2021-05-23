@@ -1,0 +1,27 @@
+{
+    "ig": {
+        "name": "instagram",
+        "link": "https://www.instagram.com/shubh_nisar.28/?igshid=xi416yom4znf",
+        "color": "#e91e63"
+    },
+    "li": {
+        "name": "linked-in",
+        "link": "https://www.linkedin.com/in/shubh-nisar-89a6a31aa/",
+        "color": "#0077b5"
+    },
+    "gi": {
+        "name": "github",
+        "link": "https://github.com/Shubh-Nisar",
+        "color": "#333"
+    },
+    "mail": {
+        "name": "email",
+        "link": "mailto:shubhnisar123@gmail.com",
+        "color": "#FBBC05"
+    },
+    "yt": {
+        "name": "youtube",
+        "link": "https://www.youtube.com/channel/UCkrCvALRUMBUsFEJw8GFGmg",
+        "color": "#FF0000"
+    }
+}

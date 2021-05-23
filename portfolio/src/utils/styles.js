@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import theme from './theme';
 
 export const StyledDivContainer = styled.div`
@@ -58,4 +58,14 @@ color: ${theme.color};
     background-color: ${theme.primary};
     color: #fafafa;
 }
+`;
+
+export const fadeInAnimation = keyframes`
+    0% {
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
 `;

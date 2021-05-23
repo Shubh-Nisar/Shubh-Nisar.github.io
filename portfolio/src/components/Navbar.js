@@ -20,8 +20,9 @@ import {
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 
-const Home = () => {
+const Navbar = () => {
     const history = useHistory();
+    const page = window.location.href.split('/')[3];
 
     const [anchorEl, setAnchorEl] = useState(null);
     const handleClick = (event) => {
@@ -30,6 +31,11 @@ const Home = () => {
     
       const handleClose = () => {
         setAnchorEl(null);
+      };
+      const activeStyle = {
+        background: theme.primary,
+        color: '#fafafa',
+        fontWeight: 600,
       };
     return (
         <>
@@ -44,9 +50,9 @@ const Home = () => {
             } onClick={() => history.push('/home')}/>
             <Time />
             <StyledNavFlex>
-                <StyledNavBtns onClick={() => history.push('/hackathons')}>Hackathons</StyledNavBtns>
-                <StyledNavBtns onClick={() => history.push('/internships')}>Internships</StyledNavBtns>
-                <StyledNavBtns onClick={() => history.push('/social')}>Social</StyledNavBtns>
+                <StyledNavBtns onClick={() => history.push('/hackathons')} style={page === 'hackathons' ? activeStyle : {}}>Hackathons</StyledNavBtns>
+                <StyledNavBtns onClick={() => history.push('/internships')} style={page === 'internships' ? activeStyle : {}}>Internships</StyledNavBtns>
+                <StyledNavBtns onClick={() => history.push('/social')} style={page === 'social' ? activeStyle : {}}>Social</StyledNavBtns>
             </StyledNavFlex>
             <StyledThemeSwitcher onClick={() => {
                 const themeChoice = JSON.parse(window.sessionStorage.getItem('portfolio_theme'));
@@ -89,7 +95,7 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Navbar;
 
 const StyledGif = styled.img`
     width: 85px;

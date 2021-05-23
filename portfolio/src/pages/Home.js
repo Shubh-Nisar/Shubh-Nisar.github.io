@@ -4,10 +4,12 @@ import Time from '../components/Time';
 import Navbar from '../components/Navbar';
 import styled, { keyframes } from 'styled-components';
 import {
-    StyledDivContainer
+    StyledDivContainer,
+    fadeInAnimation,
 } from '../utils/styles';
 import shubh from '../utils/imgs/shubh.jpeg';
 import theme from '../utils/theme';
+import Footer from '../components/Footer';
 
 const Home = () => {
     return (
@@ -33,6 +35,12 @@ const Home = () => {
                     </p>
                 </StyledTextContainer>
             </StyledAboutDivContainer>
+            <StyledExtraCurricular>
+                <StyledH1ExtraCurricular>Extra Curricular</StyledH1ExtraCurricular>
+                <h3>DJ Unicode</h3>
+                <h3>DJS Beats</h3>
+            </StyledExtraCurricular>
+            <Footer />
         </StyledDivContainer>
     );
 };
@@ -49,16 +57,6 @@ const StyledAboutDivContainer = styled.div`
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-    }
-`;
-
-const fadeInAnimation = keyframes`
-    0% {
-        opacity: 0;
-    }
-    100% {
-        visibility: visible;
-        opacity: 1;
     }
 `;
 
@@ -102,4 +100,18 @@ const StyledH1 = styled.h1`
     @media(max-width: 630px){
         text-align: center;
     }
+`;
+
+const StyledExtraCurricular = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 95%;
+    padding-left: 32px;
+`;
+
+const StyledH1ExtraCurricular = styled.h1`
+    margin-bottom: 0 !important;
+    border-bottom: rgba(66, 133, 244, 0.7) 5px solid;
 `;
