@@ -64,6 +64,9 @@ const Navbar = () => {
             <StyledNavHamburger aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
                 <MenuIcon style={{ color: theme.color }}/>
             </StyledNavHamburger>
+            <div style={{
+                backgroundColor: theme.bgOffset
+            }}>
             <StyledMenu
                 id="simple-menu"
                 anchorEl={anchorEl}
@@ -74,12 +77,15 @@ const Navbar = () => {
                 <MenuItem onClick={handleClose} style={{ 
                     color: theme.color,
                     backgroundColor: theme.bgOffset,
+                    width: '98vw',
+                    borderBottom: `${theme.gray} 1px solid`,
                 }} onClick={() => history.push('/hackathons')}>
                     Hackathons
                 </MenuItem>
                 <MenuItem onClick={handleClose} style={{ 
                     color: theme.color,
                     backgroundColor: theme.bgOffset,
+                    borderBottom: `${theme.gray} 1px solid`,
                 }} onClick={() => history.push('/internships')}>
                     Internships
                 </MenuItem>
@@ -90,6 +96,7 @@ const Navbar = () => {
                     Social
                 </MenuItem>
             </StyledMenu>
+            </div>
         </StyledDivContainer>
         </>
     );
@@ -121,4 +128,11 @@ const StyledNavFlex = styled.div`
 
 const StyledMenu = styled(Menu)`
     color: ${theme.color};
+    position: fixed !important;
+    top: 65px !important;
+    width: 100vw !important;
+
+    @media(min-width: 769px){
+        display: none;
+    }
 `;

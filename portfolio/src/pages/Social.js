@@ -66,6 +66,10 @@ const StyledIntroH1 = styled.h1`
     transition: 1s ease;
     text-align: center;
     margin: 24px auto;
+
+    @media(max-width: 430px){
+        margin: 48px auto 12px auto;
+    }
 `;
 
 const StyledFlexDiv = styled.div`

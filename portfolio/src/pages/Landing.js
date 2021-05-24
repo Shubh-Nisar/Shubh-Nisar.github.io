@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
 import theme from '../utils/theme';
@@ -13,7 +13,12 @@ const Home = () => {
     const history = useHistory();
     return (
         <StyledDivContainer>
-            <Time size={0} />
+            <Time size={0} style={{
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'center',
+                alignItems: 'center',
+            }}/>
             <StyledThemeSwitcher onClick={() => {
                 const themeChoice = JSON.parse(window.sessionStorage.getItem('portfolio_theme'));
                 window.sessionStorage.setItem('portfolio_theme', !themeChoice);

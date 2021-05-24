@@ -1,10 +1,8 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import { useHistory } from 'react-router-dom';
 import theme from '../utils/theme';
 
 const Logo = ({ logo, extras }) => {
-    const history = useHistory();
     const LogoIcon = logo;
     return (
         <StyledDivContainer>
@@ -12,6 +10,7 @@ const Logo = ({ logo, extras }) => {
                 <LogoIcon style={{
                     fontSize: 150,
                     color: extras.color,
+                    width: window.matchMedia('(min-width: 430px)') && 100,
                 }}/>
                 <h4 style={{ margin: 4, textTransform: 'uppercase', color: theme.color }}>{extras.name}</h4>
             </StyledLogoContainer>

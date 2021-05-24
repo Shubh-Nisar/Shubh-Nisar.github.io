@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Time from '../components/Time';
 import Navbar from '../components/Navbar';
 import styled, { keyframes } from 'styled-components';
 import {
@@ -15,7 +14,8 @@ const Home = () => {
     return (
         <StyledDivContainer style={{
             width: '100%',
-            height: '100vh',
+            minHeight: '100vh',
+            height: 'auto',
         }}>
             <Navbar />
             <StyledAboutDivContainer>

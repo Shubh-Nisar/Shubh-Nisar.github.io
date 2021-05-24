@@ -9,6 +9,7 @@ import { GlobalProvider } from './GlobalContext';
 import Home from './pages/Home';
 import Social from './pages/Social';
 import Hackathons from './pages/Hackathons';
+import Internships from './pages/Internships';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Router>
         <Switch>
           <Route path='/home' component={Home}/>
+          <Route path='/internships' component={Internships}/>
           <Route path='/hackathons' component={Hackathons}/>
           <Route path='/social' component={Social}/>
           <Route path='/' exact component={Landing}/>
