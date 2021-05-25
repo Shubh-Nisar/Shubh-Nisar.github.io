@@ -28,12 +28,16 @@ const Home = () => {
                         color: theme.gray,
                         margin: 0,
                         fontWeight: 600,
+                        marginTop: -16,
+                        marginBottom: 12,
                     }}>II<sup>nd</sup> Year Computer Engineering Student @Dwarkadas J. Sanghvi College of Engineering.</h3>
                     <p style={{
-                        flexWrap: 'wrap'
+                        flexWrap: 'wrap',
+                        margin: 0,
                     }}>
-                        I have always been an admirer of the powerful websites out there and always wanted to build them myself. As a Front End Web Developer I have always felt that the User Interface is one of the key to engage the user.<br />
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        I have always been an admirer of the powerful websites out there and always wanted to build them myself. As a Front End Web Developer I have always felt that the User Interface is very important to engage the user.<br /><br />
+                        I began my Web Developement journey in May 2020 starting with basic HTML and CSS and then moving on to Javascript, React and it's various libraries. I have built various projects in ReactJS and collaborated with few people to create Frontend + Backend Websites both in NodeJS and Django.<br /><br />
+                        Recently, I have found my interest in Machine Learning and it's application over various datasets and wish to explore more in that field.
                     </p>
                 </StyledTextContainer>
             </StyledAboutDivContainer>
@@ -116,6 +120,8 @@ const StyledExtraCurricular = styled.div`
     justify-content: center;
     align-items: center;
     width: 95%;
+    visibility: hidden;
+    animation: ${fadeInAnimation} ease 2s forwards;
 `;
 
 const StyledH1ExtraCurricular = styled.h1`

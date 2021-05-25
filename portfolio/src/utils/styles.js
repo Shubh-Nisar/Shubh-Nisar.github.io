@@ -79,4 +79,8 @@ export const StyledCreative = styled.div`
     transform: rotate(45deg);
     height: 24px;
     background-color: ${theme.bgOffset};
+
+    @media(max-width: 1300px){
+        display: none;
+    }
 `;
