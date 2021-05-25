@@ -1,7 +1,7 @@
 export const internships = [{
     sapio: {
         name: "Sapio Analytica",
-        duration: "3 mos",
+        duration: "3 mon",
         position: "Front End Developer Intern",
         status: "green",
         image: "/images/sapio.png",
@@ -11,7 +11,7 @@ export const internships = [{
     },
     dju: {
         name: "DJU External Project",
-        duration: "3 mos",
+        duration: "3 mon",
         position: "Front End Developer Intern",
         status: "green",
         image: "/images/unicode.png",

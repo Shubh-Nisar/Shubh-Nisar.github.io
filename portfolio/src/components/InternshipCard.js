@@ -17,6 +17,8 @@ const InternshipCard = ({ internship }) => {
             backgroundColor: theme.bgOffset,
             padding: 18,
             borderRadius: 12,
+            width: 300,
+            margin: 16,
         }}>
             <StyledAnchor href={internship.linkedin} target="_blank">
                 <StyledImgContainer>
@@ -26,9 +28,15 @@ const InternshipCard = ({ internship }) => {
                 </StyledImgContainer>
                 <h5 style={{
                     position: 'relative',
-                    bottom: 290,
-                    margin: 0,
-                    fontWeight: 600,
+                    bottom: 300,
+                    margin: '0 auto',
+                    left: -132,
+                    color: theme.primary,
+                    fontWeight: 800,
+                    textTransform: 'uppercase',
+                    width: 48,
+                    textAlign: 'center',
+                    padding: 8,
                 }}>
                     {internship.duration}
                 </h5>

@@ -20,8 +20,7 @@ const Footer = () => {
 
 export default Footer;
 
-const StyledBtn = styled.button`
-    background-color: ${theme.bgOffset};
+const StyledBtn = styled.p`
     color: ${theme.color};
     margin: 20px auto;
     padding: 0 10px;

@@ -69,3 +69,14 @@ export const fadeInAnimation = keyframes`
         opacity: 1;
     }
 `;
+
+export const StyledCreative = styled.div`
+    width: 100vw;
+    position: fixed;
+    top: 50%;
+    left: 20%;
+    z-index: 10;
+    transform: rotate(45deg);
+    height: 24px;
+    background-color: ${theme.bgOffset};
+`;

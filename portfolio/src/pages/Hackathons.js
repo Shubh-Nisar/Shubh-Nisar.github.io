@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar';
 import {
     StyledDivContainer,
     fadeInAnimation,
+    StyledCreative,
 } from '../utils/styles';
 import YoutubeCard from '../components/YoutubeCard';
 import { hackathon } from '../utils/hackathon';

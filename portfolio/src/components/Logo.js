@@ -5,7 +5,7 @@ import theme from '../utils/theme';
 const Logo = ({ logo, extras }) => {
     const LogoIcon = logo;
     return (
-        <StyledDivContainer>
+        <StyledDivContainer logoColor>
             <StyledLogoContainer href={extras.link} target="_blank">
                 <LogoIcon style={{
                     fontSize: 150,
@@ -36,6 +36,10 @@ const StyledDivContainer = styled.div`
     justify-content: center;
     align-items: flex-start;
     margin: 24px;
+
+    :hover{
+        transform: scale(0.96);
+    }
 `;
 
 const StyledLogoContainer = styled.a`

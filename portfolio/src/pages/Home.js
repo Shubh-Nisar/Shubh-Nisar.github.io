@@ -9,6 +9,8 @@ import {
 import shubh from '../utils/imgs/shubh.jpeg';
 import theme from '../utils/theme';
 import Footer from '../components/Footer';
+import { extraCurricular } from '../utils/extraCurricular';
+import ExtraCurricular from '../components/ExtraCurricular';
 
 const Home = () => {
     return (
@@ -37,8 +39,14 @@ const Home = () => {
             </StyledAboutDivContainer>
             <StyledExtraCurricular>
                 <StyledH1ExtraCurricular>Extra Curricular</StyledH1ExtraCurricular>
-                <h3>DJ Unicode</h3>
-                <h3>DJS Beats</h3>
+                <StyledFlex>
+                    {Object.entries(extraCurricular[0]).map(([key, value], i) => (
+                        <>
+                        {console.log(value)}
+                        <ExtraCurricular extra={value}/>
+                        </>
+                    ))}
+                </StyledFlex>
             </StyledExtraCurricular>
             <Footer />
         </StyledDivContainer>
@@ -106,12 +114,20 @@ const StyledExtraCurricular = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     width: 95%;
-    padding-left: 32px;
 `;
 
 const StyledH1ExtraCurricular = styled.h1`
     margin-bottom: 0 !important;
     border-bottom: rgba(66, 133, 244, 0.7) 5px solid;
+`;
+
+const StyledFlex = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    flex-wrap: wrap;
 `;
