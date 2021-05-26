@@ -21,6 +21,9 @@ import Footer from '../components/Footer';
 import theme from '../utils/theme';
 
 const Social = () => {
+    setTimeout(() => {
+        window.sessionStorage.removeItem('portfolio_page');
+    }, 2000);
     return(
         <StyledDivContainer style={{
             width: '100%',

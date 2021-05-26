@@ -57,7 +57,13 @@ const Navbar = () => {
             <StyledThemeSwitcher onClick={() => {
                 const themeChoice = JSON.parse(window.sessionStorage.getItem('portfolio_theme'));
                 window.sessionStorage.setItem('portfolio_theme', !themeChoice);
+                const page = window.location.href.split("/")[3];
+                console.log(page);
+                // window.location.reload();
+                // DUE TO GH PAGES RE-ROUTED TO "/" ROUTE
+                history.push('/');
                 window.location.reload();
+                window.sessionStorage.setItem('portfolio_page', JSON.stringify(page), page);
             }} style={{ position: 'absolute' }}>
                 {JSON.parse(window.sessionStorage.getItem('portfolio_theme')) ? <Brightness3 /> : <Brightness7 style={{ color: '#fafafa' }}/>}
             </StyledThemeSwitcher>

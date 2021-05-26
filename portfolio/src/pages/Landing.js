@@ -11,6 +11,11 @@ import {
 
 const Home = () => {
     const history = useHistory();
+    let page = JSON.parse(window.sessionStorage.getItem('portfolio_page'));
+    if(page && page.length > 0){
+        history.push(`/${page}`);
+        page = '/';
+    }
     return (
         <StyledDivContainer>
             <Time size={0} style={{
@@ -22,9 +27,7 @@ const Home = () => {
             <StyledThemeSwitcher onClick={() => {
                 const themeChoice = JSON.parse(window.sessionStorage.getItem('portfolio_theme'));
                 window.sessionStorage.setItem('portfolio_theme', !themeChoice);
-                // window.location.reload();
-                // DUE TO GH PAGES RE-ROUTED TO "/" ROUTE
-                window.location.assign('/');
+                window.location.reload();
             }}>
                 {JSON.parse(window.sessionStorage.getItem('portfolio_theme')) ? <Brightness3 /> : <Brightness7 style={{ color: '#fafafa' }}/>}
             </StyledThemeSwitcher>

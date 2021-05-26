@@ -13,6 +13,9 @@ import { extraCurricular } from '../utils/extraCurricular';
 import ExtraCurricular from '../components/ExtraCurricular';
 
 const Home = () => {
+    setTimeout(() => {
+        window.sessionStorage.removeItem('portfolio_page');
+    }, 2000);
     return (
         <StyledDivContainer style={{
             width: '100%',

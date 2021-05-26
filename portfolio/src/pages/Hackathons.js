@@ -14,6 +14,9 @@ import Footer from '../components/Footer';
 import theme from '../utils/theme';
 
 const Hackathons = () => {
+    setTimeout(() => {
+        window.sessionStorage.removeItem('portfolio_page');
+    }, 2000);
     return(
         <StyledDivContainer style={{
             minHeight: '100vh',
