@@ -22,7 +22,9 @@ const Home = () => {
             <StyledThemeSwitcher onClick={() => {
                 const themeChoice = JSON.parse(window.sessionStorage.getItem('portfolio_theme'));
                 window.sessionStorage.setItem('portfolio_theme', !themeChoice);
-                window.location.reload();
+                // window.location.reload();
+                // DUE TO GH PAGES RE-ROUTED TO "/" ROUTE
+                window.location.assign('/');
             }}>
                 {JSON.parse(window.sessionStorage.getItem('portfolio_theme')) ? <Brightness3 /> : <Brightness7 style={{ color: '#fafafa' }}/>}
             </StyledThemeSwitcher>

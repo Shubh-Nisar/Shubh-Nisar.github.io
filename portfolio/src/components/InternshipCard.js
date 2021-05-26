@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 import {
     StyledDivContainer,
-    fadeInAnimation,
 } from '../utils/styles';
 import theme from '../utils/theme';
 import {
@@ -11,7 +10,6 @@ import {
 } from '@material-ui/icons';
 
 const InternshipCard = ({ internship }) => {
-    console.log(internship)
     return (
         <StyledDivContainer style={{
             backgroundColor: theme.bgOffset,

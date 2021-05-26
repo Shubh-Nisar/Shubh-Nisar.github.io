@@ -1,14 +1,9 @@
-import React, { createContext, useState, useEffect } from "react";
-import { lightTheme, darkTheme } from './utils/theme';
+import React, { createContext, useState } from "react";
 
 export const GlobalContext = createContext();
 
 export const GlobalProvider = (props) => {
     const [time, setTime] = useState();
-
-    useEffect(() => {
-        console.log(time);
-    }, [time]);
     
     return (
         <GlobalContext.Provider

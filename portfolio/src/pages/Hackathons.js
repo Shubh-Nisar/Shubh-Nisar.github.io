@@ -40,7 +40,6 @@ const Hackathons = () => {
             <StyledGrid>
                 {Object.entries(hackathon[0]).map(([key, value], i) => (
                     <>
-                    {console.log(value)}
                     <YoutubeCard details={value}/>
                     </>
                 ))}

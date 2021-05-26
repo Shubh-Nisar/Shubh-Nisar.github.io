@@ -37,7 +37,6 @@ const Internships = () => {
             <StyledGrid>
                     {Object.entries(internships[0]).map(([key, value], i) => (
                         <>
-                        {console.log(value)}
                         <InternshipCard internship={value}/>
                         </>
                     ))}

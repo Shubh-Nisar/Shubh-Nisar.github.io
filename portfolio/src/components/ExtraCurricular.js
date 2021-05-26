@@ -10,7 +10,6 @@ import {
 } from '@material-ui/icons';
 
 const ExtraCurricular = ({ extra }) => {
-    console.log(extra)
     return (
         <StyledDivContainer style={{
             margin: 20,
