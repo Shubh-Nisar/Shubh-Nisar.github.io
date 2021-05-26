@@ -108,6 +108,7 @@ export default InternshipCard;
 
 const StyledAnchor = styled.a`
     text-decoration: none;
+    color: ${theme.color};
     :visited{
         color: ${theme.color};
     }

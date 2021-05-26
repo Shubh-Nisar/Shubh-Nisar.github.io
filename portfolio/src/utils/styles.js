@@ -16,7 +16,7 @@ right: 25px;
 border-radius: 12px;
 border: none;
 padding: 12px;
-background-color: ${!JSON.parse(window.sessionStorage.getItem('portfolio_theme')) && '#222'};
+background-color: ${!JSON.parse(window.sessionStorage.getItem('portfolio_theme')) ? '#222' : '#EEE'};
 
 :hover{
     transform: scale(0.98);
@@ -31,7 +31,7 @@ right: 85px;
 border-radius: 12px;
 border: none;
 padding: 12px;
-background-color: ${!JSON.parse(window.sessionStorage.getItem('portfolio_theme')) && '#222'};
+background-color: ${!JSON.parse(window.sessionStorage.getItem('portfolio_theme')) ? '#222' : '#EEE'};
 
 :hover{
     transform: scale(0.98);
