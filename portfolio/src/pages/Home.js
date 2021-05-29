@@ -11,6 +11,8 @@ import theme from '../utils/theme';
 import Footer from '../components/Footer';
 import { extraCurricular } from '../utils/extraCurricular';
 import ExtraCurricular from '../components/ExtraCurricular';
+import { project } from '../utils/project';
+import ProjectCard from '../components/ProjectCard';
 
 const Home = () => {
     setTimeout(() => {
@@ -52,6 +54,18 @@ const Home = () => {
                         {console.log(value)}
                         <ExtraCurricular extra={value}/>
                         </>
+                    ))}
+                </StyledFlex>
+            </StyledExtraCurricular>
+            <StyledExtraCurricular style={{
+                marginTop: 16
+            }}>
+                <StyledH1ExtraCurricular>Projects</StyledH1ExtraCurricular>
+                <StyledFlex style={{
+                    alignItems: 'stretch',
+                }}>
+                    {Object.entries(project[0]).map(([key, value], i) => (
+                        <ProjectCard project={value}/>
                     ))}
                 </StyledFlex>
             </StyledExtraCurricular>
@@ -139,4 +153,5 @@ const StyledFlex = styled.div`
     align-items: center;
     width: 95%;
     flex-wrap: wrap;
+    margin-top: 6px;
 `;

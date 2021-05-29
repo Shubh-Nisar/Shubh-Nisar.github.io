@@ -40,6 +40,7 @@ const StyledTime = styled.p`
     font-size: ${props => props.size == 0 ? '10vw' : '24px'};
     color: ${theme.color};
     font-weight: ${props => props.size != 0 && 600};
+    z-index: 100;
 
     animation: ${borders} ease;
     animation-duration: ${props => props.size == 0 && '2s'};

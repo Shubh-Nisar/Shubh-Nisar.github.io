@@ -84,3 +84,21 @@ export const StyledCreative = styled.div`
         display: none;
     }
 `;
+
+export const StyledBtn = styled.a`
+    background-color: ${theme.bgOffset};
+    color: ${theme.color};
+    margin: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    text-decoration: none;
+    
+    :hover{
+        transform: scale(0.98);
+        transition: 0.4s;
+        background-color: ${theme.primary};
+        color: #fafafa;
+    }
+`;
