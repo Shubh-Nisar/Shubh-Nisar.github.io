@@ -65,7 +65,7 @@ const ProjectCard = ({ project }) => {
 export default ProjectCard;
 
 const StyledH1 = styled.h2`
-    @media(max-width: 374px){
+    @media(max-width: 400px){
         font-size: 20px;
     }
 `;
