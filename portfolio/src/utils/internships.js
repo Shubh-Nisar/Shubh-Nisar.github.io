@@ -3,7 +3,7 @@ export const internships = [
     phionike: {
       name: "Phionike Studio",
       duration: "3 mon",
-      position: "React & React Native Intern",
+      position: "Tech & Research Intern",
       status: "green",
       image: "/images/phionike.png",
       linkedin: "https://www.linkedin.com/company/phionike-solutions/",
@@ -12,6 +12,7 @@ export const internships = [
         "React Native",
         "Custom npm library",
         "Styled Components",
+        "Aframe.io",
       ],
       projects: ["Supersnap", "Web Components Phionike"],
     },
