@@ -13,7 +13,7 @@ export const internships = [
         "Custom npm library",
         "Styled Components",
       ],
-      projects: ["Supersnap"],
+      projects: ["Supersnap", "Web Components Phionike"],
     },
     sapio: {
       name: "Sapio Analytica",
