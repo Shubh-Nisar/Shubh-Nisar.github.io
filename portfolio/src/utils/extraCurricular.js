@@ -2,8 +2,8 @@ export const extraCurricular = [
   {
     dju: {
       name: "DJ Unicode",
-      position: ["Front End Mentee"],
-      duration: "16",
+      position: ["Front End Mentor", "Front End Mentee"],
+      duration: "24",
       linkedin: "https://www.linkedin.com/company/djunicode/mycompany/",
       image: "/images/unicode.png",
       type: "committee",
@@ -12,7 +12,7 @@ export const extraCurricular = [
     beats: {
       name: "DJS Beats",
       position: ["Social Media Manager", "Publicity Member"],
-      duration: "27",
+      duration: "34",
       linkedin: "https://www.linkedin.com/company/djs-beats/mycompany/",
       image: "/images/beats.jpeg",
       type: "committee",

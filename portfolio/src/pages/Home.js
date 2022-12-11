@@ -10,6 +10,7 @@ import { extraCurricular } from "../utils/extraCurricular";
 import ExtraCurricular from "../components/ExtraCurricular";
 import { project } from "../utils/project";
 import ProjectCard from "../components/ProjectCard";
+import PaperCard from "../components/PaperCard";
 
 const Home = () => {
   setTimeout(() => {
@@ -81,14 +82,14 @@ const Home = () => {
           marginTop: 16,
         }}
       >
-        <StyledH1ExtraCurricular>Projects</StyledH1ExtraCurricular>
+        <StyledH1ExtraCurricular>Publications</StyledH1ExtraCurricular>
         <StyledFlex
           style={{
             alignItems: "stretch",
           }}
         >
           {Object.entries(project[0]).map(([key, value], i) => (
-            <ProjectCard project={value} />
+            <PaperCard project={value} />
           ))}
         </StyledFlex>
       </StyledExtraCurricular>

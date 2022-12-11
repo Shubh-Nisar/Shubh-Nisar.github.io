@@ -88,12 +88,14 @@ export const StyledCreative = styled.div`
 export const StyledBtn = styled.a`
     background-color: ${theme.bgOffset};
     color: ${theme.color};
-    margin: 10px;
+    margin: 14px 10px;
     padding: 8px;
     border-radius: 8px;
     border: none;
     font-size: 14px;
     text-decoration: none;
+    min-width: 100px;
+    vertical-align: middle;
     
     :hover{
         transform: scale(0.98);

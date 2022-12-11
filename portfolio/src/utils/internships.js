@@ -1,5 +1,25 @@
 export const internships = [
   {
+    iitgn: {
+      name: "IIT Gandhinagar",
+      duration: "9 mon",
+      position: "Research Intern",
+      status: "green",
+      image: "/images/iitgn.png",
+      linkedin: "https://www.linkedin.com/school/indian-institute-of-technology-gandhinagar-iitgn-/mycompany/",
+      tech: ["ReactJS", "Docker", "Flask", "AWS", "NLP", "LID", "Code-Mixed"],
+      projects: ["Commentator", "GA"],
+    },
+    oracle: {
+      name: "Oracle",
+      duration: "2 mon",
+      position: "Project Intern",
+      status: "green",
+      image: "/images/oracle.png",
+      linkedin: "https://www.linkedin.com/company/oracle/",
+      tech: ["Java", "J2EE", "Docker", "Kubernetes", "Java REST", "CRUD", "Postman", "Eclipse", "JAR"],
+      projects: ["Flexcube"],
+    },
     phionike: {
       name: "Phionike Studio",
       duration: "3 mon",
@@ -25,16 +45,6 @@ export const internships = [
       linkedin: "https://www.linkedin.com/company/sapio-analytics/",
       tech: ["ReactJS", "Context Hook", "CSS", "Styled Components"],
       projects: ["Data Uploading Portal", "Chatbot"],
-    },
-    dju: {
-      name: "DJU External Project",
-      duration: "3 mon",
-      position: "Front End Developer Intern",
-      status: "green",
-      image: "/images/unicode.png",
-      linkedin: "https://www.linkedin.com/company/djunicode/mycompany/",
-      tech: ["ReactJS", "Redux", "CSS", "Styled Components"],
-      projects: ["ProShop"],
     },
   },
 ];
