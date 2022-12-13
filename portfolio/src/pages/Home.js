@@ -60,9 +60,7 @@ const Home = () => {
             both in NodeJS and Django.
             <br />
             <br />
-            Recently, I have found my interest in Machine Learning and it's
-            application over various datasets and wish to explore more in that
-            field.
+            My Research interests are focused on the domain of Computer Vision and Code-Mixed NLP, and I am happy to collaborate on the same.
           </p>
         </StyledTextContainer>
       </StyledAboutDivContainer>
