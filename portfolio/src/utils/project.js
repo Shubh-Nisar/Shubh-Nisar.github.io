@@ -12,6 +12,7 @@ export const project = [{
     action: {
         title: '"Action Recognition on American Sign Language using Deep Learning," 2022 Sardar Patel International Conference on Industry 4.0 - Nascent Technologies and Sustainability for Make in India Initiative (SPICON-2022)',
         tech: "Computer Vision",
+        link: "https://ieeexplore.ieee.org/document/10180616",
     },
     commentator: {
         title: '"COMMENTATOR: A Code-mixed Multilingual Text Annotation Framework," 2023 The 17th Conference of the European Chapter of the Association for Computational Linguistics (EACL-2023)',

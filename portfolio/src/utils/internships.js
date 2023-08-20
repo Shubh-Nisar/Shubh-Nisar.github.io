@@ -2,12 +2,12 @@ export const internships = [
   {
     iitgn: {
       name: "IIT Gandhinagar",
-      duration: "9 mon",
+      duration: "15 mon",
       position: "Research Intern",
       status: "green",
       image: "/images/iitgn.png",
       linkedin: "https://www.linkedin.com/school/indian-institute-of-technology-gandhinagar-iitgn-/mycompany/",
-      tech: ["ReactJS", "Docker", "Flask", "AWS", "NLP", "LID", "Code-Mixed"],
+      tech: ["ReactJS", "Docker", "Flask", "AWS S3", "AWS EC2", "NLP", "LID", "Code-Mixed"],
       projects: ["Commentator", "GA"],
     },
     oracle: {

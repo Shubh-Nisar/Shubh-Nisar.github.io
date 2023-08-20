@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import styled, { keyframes } from "styled-components";
 import { StyledDivContainer, fadeInAnimation } from "../utils/styles";
-import shubh from "../utils/imgs/shubh.jpeg";
+import shubh from "../utils/imgs/shubh.jpg";
 import theme from "../utils/theme";
 import Footer from "../components/Footer";
 import { extraCurricular } from "../utils/extraCurricular";
@@ -38,16 +38,16 @@ const Home = () => {
               marginBottom: 12,
             }}
           >
-            Computer Engineering Student @Dwarkadas J. Sanghvi College of
-            Engineering [2023].
+            Master's with a major in Computer Science @NC STATE UNIVERSITY.
           </h3>
           <p
             style={{
               flexWrap: "wrap",
               margin: 0,
+              textAlign: 'justify'
             }}
           >
-            I have always been an admirer of the powerful websites out there and
+            {/* I have always been an admirer of the powerful websites out there and
             always wanted to build them myself. As a Front End Web Developer I
             have always felt that the User Interface is very important to engage
             the user.
@@ -60,21 +60,12 @@ const Home = () => {
             both in NodeJS and Django.
             <br />
             <br />
-            My Research interests are focused on the domain of Computer Vision and Code-Mixed NLP, and I am happy to collaborate on the same.
+            My Research interests are focused on the domain of Computer Vision and Code-Mixed NLP, and I am happy to collaborate on the same. */}
+            I am an adaptable and dedicated computer science professional with a solid background in multiple tools and technologies. I am proficient in languages like Python, Java, and C++ and frameworks like React and Flask. With research and industrial experience at <i>IIT Gandhinagar</i> and <i>Oracle</i>, respectively, I find my practical knowledge at par with my theoretical understanding. Besides academics, I extend myself to extra-curricular activities via mentorship and leadership roles in tech and non-tech clubs. I aim to work in a positive environment that supports out-of-the-box thinking and is ready to explore new approaches to solving modern problems. I am excited about the opportunity to contribute my expertise, and I am available for internship and co-op roles.
           </p>
         </StyledTextContainer>
       </StyledAboutDivContainer>
-      <StyledExtraCurricular>
-        <StyledH1ExtraCurricular>Extra Curricular</StyledH1ExtraCurricular>
-        <StyledFlex>
-          {Object.entries(extraCurricular[0]).map(([key, value], i) => (
-            <>
-              {console.log(value)}
-              <ExtraCurricular extra={value} />
-            </>
-          ))}
-        </StyledFlex>
-      </StyledExtraCurricular>
+      
       <StyledExtraCurricular
         style={{
           marginTop: 16,
@@ -91,6 +82,44 @@ const Home = () => {
           ))}
         </StyledFlex>
       </StyledExtraCurricular>
+
+      <StyledExtraCurricular style={{
+        borderTop: "3px solid #333",
+        marginTop: 36
+      }}>
+        <StyledH1ExtraCurricular>Undergraduate</StyledH1ExtraCurricular>
+        <h3
+            style={{
+              color: theme.gray,
+              margin: 0,
+              fontWeight: 600,
+              marginTop: 8,
+              marginBottom: 12,
+            }}
+          >
+            Bachelor of Technology in Computer Engineering @Dwarkadas J. Sanghvi College of Engineering.
+          </h3>
+        <p
+            style={{
+              flexWrap: "wrap",
+              margin: 0,
+              textAlign: "justify"
+            }}
+          >
+          I completed my undergraduate in Computer Engineering from Dwarkadas J. Sanghvi College of Engineering. In my four-year journey, I had the opportunity to grasp the essential knowledge of computer fundamentals. Relevant courses include <i>Analysis of Algorithms</i>, <i>Database Management Systems (DBMS)</i>, <i>Operating Systems</i>, and <i>Machine Learning</i>. My internships and extra-curricular activities have allowed me to explore and implement concepts in tangible projects in the real world, empowering me to excel in both academic pursuits and real-world challenges. Extra-curricular activities facilitated my development in technical, social, and cultural spheres.
+        </p>
+
+        <StyledH2ExtraCurricular>Extra Curriculars</StyledH2ExtraCurricular>
+        <StyledFlex>
+          {Object.entries(extraCurricular[0]).map(([key, value], i) => (
+            <>
+              {console.log(value)}
+              <ExtraCurricular extra={value} />
+            </>
+          ))}
+        </StyledFlex>
+      </StyledExtraCurricular>
+
       <Footer />
     </StyledDivContainer>
   );
@@ -112,7 +141,7 @@ const StyledAboutDivContainer = styled.div`
 `;
 
 const StyledMyImg = styled.img`
-  margin: 12px 12px 0 12px;
+  margin: 12px 30px 0 12px;
   width: 300px;
   height: 300px;
   border-radius: 12px;
@@ -166,6 +195,11 @@ const StyledExtraCurricular = styled.div`
 const StyledH1ExtraCurricular = styled.h1`
   margin-bottom: 0 !important;
   border-bottom: rgba(66, 133, 244, 0.7) 5px solid;
+`;
+
+const StyledH2ExtraCurricular = styled.h2`
+margin-bottom: 0 !important;
+border-bottom: rgba(66, 133, 244, 0.7) 5px solid;
 `;
 
 const StyledFlex = styled.div`
