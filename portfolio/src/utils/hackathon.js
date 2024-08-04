@@ -1,24 +1,43 @@
 export const hackathon = [
   {
-    loc: {
-      name: "LOC 3.0",
+    nchack: {
+      name: "Hack NC State",
       embedded: (
         <iframe
           width="100%"
           height="100%"
-          src="https://www.youtube.com/embed/74OVIPUa-dg"
+          src="https://www.youtube.com/embed/QXVtFZ0E9u4?si=mlLXB14Jvu0rcMtY"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
       ),
-      result: "1st Position",
+      result: "Winner",
       noOfMembers: 4,
-      organizer: "DJ ACM",
-      github: "https://github.com/Shubh-Nisar/LOC3.0_CodeX",
+      organizer: "NC State University",
+      github: "https://github.com/Shubh-Nisar/",
       time: "24 hrs",
     },
+    // loc: {
+    //   name: "LOC 3.0",
+    //   embedded: (
+    //     <iframe
+    //       width="100%"
+    //       height="100%"
+    //       src="https://www.youtube.com/embed/74OVIPUa-dg"
+    //       title="YouTube video player"
+    //       frameborder="0"
+    //       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    //       allowfullscreen
+    //     ></iframe>
+    //   ),
+    //   result: "1st Position",
+    //   noOfMembers: 4,
+    //   organizer: "DJ ACM",
+    //   github: "https://github.com/Shubh-Nisar/LOC3.0_CodeX",
+    //   time: "24 hrs",
+    // },
     codeit: {
       name: "CODE IT 20",
       embedded: (

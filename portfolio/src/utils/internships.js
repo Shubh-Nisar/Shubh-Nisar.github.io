@@ -1,9 +1,19 @@
 export const internships = [
   {
+    ncics: {
+      name: "North Carolina Institute for Climate Studies",
+      duration: "3 mon",
+      position: "Software Engineer Intern",
+      status: "green",
+      image: "/images/ncics.jpg",
+      linkedin: "https://www.linkedin.com/company/cooperative-institute-for-climate-and-satellites---north-carolina/mycompany/",
+      tech: ["NextJS", "AWS", "Docker", "Pulumi"],
+      projects: ["Sea Surface Temperature"],
+    },
     iitgn: {
       name: "IIT Gandhinagar",
       duration: "15 mon",
-      position: "Research Intern",
+      position: "Software Engineer Intern",
       status: "green",
       image: "/images/iitgn.png",
       linkedin: "https://www.linkedin.com/school/indian-institute-of-technology-gandhinagar-iitgn-/mycompany/",
@@ -13,7 +23,7 @@ export const internships = [
     oracle: {
       name: "Oracle",
       duration: "2 mon",
-      position: "Project Intern",
+      position: "Software Engineer Intern",
       status: "green",
       image: "/images/oracle.png",
       linkedin: "https://www.linkedin.com/company/oracle/",
@@ -23,7 +33,7 @@ export const internships = [
     phionike: {
       name: "Phionike Studio",
       duration: "3 mon",
-      position: "Tech & Research Intern",
+      position: "Web Development Intern",
       status: "green",
       image: "/images/phionike.png",
       linkedin: "https://www.linkedin.com/company/phionike-solutions/",
@@ -39,7 +49,7 @@ export const internships = [
     sapio: {
       name: "Sapio Analytica",
       duration: "3 mon",
-      position: "Front End Developer Intern",
+      position: "Web Development Intern",
       status: "green",
       image: "/images/sapio.png",
       linkedin: "https://www.linkedin.com/company/sapio-analytics/",

@@ -2,8 +2,8 @@ import React from "react";
 
 import Navbar from "../components/Navbar";
 import styled, { keyframes } from "styled-components";
-import { StyledDivContainer, fadeInAnimation } from "../utils/styles";
-import shubh from "../utils/imgs/shubh.jpg";
+import { StyledDivContainer, fadeInAnimation, StyledBtn } from "../utils/styles";
+import shubh from "../utils/imgs/Shubh-Nisar.png";
 import theme from "../utils/theme";
 import Footer from "../components/Footer";
 import { extraCurricular } from "../utils/extraCurricular";
@@ -61,7 +61,7 @@ const Home = () => {
             <br />
             <br />
             My Research interests are focused on the domain of Computer Vision and Code-Mixed NLP, and I am happy to collaborate on the same. */}
-            I am an adaptable and dedicated computer science professional with a solid background in multiple tools and technologies. I am proficient in languages like Python, Java, and C++ and frameworks like React and Flask. With research and industrial experience at <i>IIT Gandhinagar</i> and <i>Oracle</i>, respectively, I find my practical knowledge at par with my theoretical understanding. Besides academics, I extend myself to extra-curricular activities via mentorship and leadership roles in tech and non-tech clubs. I aim to work in a positive environment that supports out-of-the-box thinking and is ready to explore new approaches to solving modern problems. I am excited about the opportunity to contribute my expertise, and I am available for internship and co-op roles.
+            I am an adaptable and dedicated computer science professional with a solid background in multiple tools and technologies. I am proficient in languages like Python, Java, and JavaScript, frameworks like React and Flask, and cloud resources like AWS and Pulumi. With industrial experience at <i>North Carolina Institute for Climate Studies</i> and <i>Oracle</i>, I find my practical knowledge at par with my theoretical understanding. Besides academics, I extend myself to extra-curricular activities via mentorship and leadership roles in tech and non-tech clubs. I aim to work in a positive environment that supports out-of-the-box thinking and is ready to explore new approaches to solving modern problems. I am excited about the opportunity to contribute my expertise, and I am available for full-time roles. <StyledBtn target="_blank" href="https://drive.google.com/file/d/1qBHU8IIJHHy3PpO4V9D4n7eIfrjX8mKM/view?usp=sharing">Resume</StyledBtn>
           </p>
         </StyledTextContainer>
       </StyledAboutDivContainer>
