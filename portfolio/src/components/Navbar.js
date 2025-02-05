@@ -80,25 +80,34 @@ const Navbar = () => {
                 open={Boolean(anchorEl)}
                 onClose={handleClose}
             >
-                <MenuItem onClick={handleClose} style={{ 
+                <MenuItem style={{ 
                     color: theme.color,
                     backgroundColor: theme.bgOffset,
                     width: '98vw',
                     borderBottom: `${theme.gray} 1px solid`,
-                }} onClick={() => history.push('/hackathons')}>
+                }} onClick={() => {
+                    handleClose();
+                    history.push('/hackathons')
+                    }}>
                     Hackathons
                 </MenuItem>
-                <MenuItem onClick={handleClose} style={{ 
+                <MenuItem style={{ 
                     color: theme.color,
                     backgroundColor: theme.bgOffset,
                     borderBottom: `${theme.gray} 1px solid`,
-                }} onClick={() => history.push('/internships')}>
+                }} onClick={() => {
+                    handleClose();
+                    history.push('/internships')
+                    }}>
                     Internships
                 </MenuItem>
-                <MenuItem onClick={handleClose} style={{ 
+                <MenuItem style={{ 
                     color: theme.color,
                     backgroundColor: theme.bgOffset,
-                }} onClick={() => history.push('/social')}>
+                }} onClick={() => {
+                    handleClose();
+                    history.push('/social')
+                    }}>
                     Social
                 </MenuItem>
             </StyledMenu>
