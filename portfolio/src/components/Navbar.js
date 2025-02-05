@@ -14,7 +14,6 @@ import theme from '../utils/theme';
 import logo_light from '../utils/gifs/logo_light.gif';
 import logo_dark from '../utils/gifs/logo_dark.gif';
 import {
-    Button,
     Menu,
     MenuItem,
 } from '@material-ui/core';
