@@ -85,7 +85,7 @@ const Navbar = () => {
                     width: '98vw',
                     borderBottom: `${theme.gray} 1px solid`,
                 }} onClick={() => {
-                    handleClose();
+                    // handleClose();
                     history.push('/hackathons')
                     }}>
                     Hackathons
@@ -95,7 +95,7 @@ const Navbar = () => {
                     backgroundColor: theme.bgOffset,
                     borderBottom: `${theme.gray} 1px solid`,
                 }} onClick={() => {
-                    handleClose();
+                    // handleClose();
                     history.push('/internships')
                     }}>
                     Internships
@@ -104,7 +104,7 @@ const Navbar = () => {
                     color: theme.color,
                     backgroundColor: theme.bgOffset,
                 }} onClick={() => {
-                    handleClose();
+                    // handleClose();
                     history.push('/social')
                     }}>
                     Social
